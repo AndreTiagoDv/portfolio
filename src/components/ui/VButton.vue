@@ -28,7 +28,8 @@ export default {
 <style scoped>
 button {
     padding: 0.83rem;
-    background-color: #f4f7fa;
+    font-size: 1rem;
+    background-color: #f2f5f8;
     width: 100%;
     border-radius: 0.5rem;
     border: none;
@@ -38,12 +39,15 @@ button {
 button.primary {
     background-color: #335fdb;
     color: #f4f7fa;
-    font-size: medium;
+
 }
 
-button:hover {
-    background-color: white;
+button.primary:hover {
+    background-color:  #3965dde6;
     transform: scale(1.03);
-    color: black;
+}
+button:hover {
+    background-color:  #f0f5f9;
+    transform: scale(1.03);
 }
 </style>
