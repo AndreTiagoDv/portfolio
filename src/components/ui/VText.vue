@@ -36,26 +36,29 @@ export default {
 }
 </script>
 
-<style scoped>
-.texto {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+<style  scoped>
+
 
 .title {
-  font-size:1rem ;
-  font-weight: bold;
+  font-size: 1.5rem; 
+  font-weight: lighter;
+  color: rgba(115, 115, 115, 0.863);
+  font-family: sans-serif;
 }
 
-.highligth {
-  font-size: 2rem;
+.highlight {
+  font-size: 3.75rem;
   font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .paragraph {
-  font-size: 1em;
+  font-size: 1.5rem;
 }
 
 .description {
-  font-weight: bold;
+  font-size: 1.25rem; 
+  font-weight: lighter;
+  color: rgba(115, 115, 115, 0.863);
 }
 </style>
