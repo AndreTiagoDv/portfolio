@@ -1,18 +1,16 @@
 <script setup lang="ts">
 import Image from '@/assets/Image.jpg';
-import Test from './ui/VText.vue';
+import Text from './ui/VText.vue';
 import Button from './ui/VButton.vue'
 </script>
 
 <template>
     <div class="container-intro">
         <div class="intro">
-            <Test type="title">potfólio Profissional</Test>
-            <Test type="highlight">Meu futuro em código</Test>
-            <Test type="description"> Sou desenvolvedor apaixonado por tecnologia, focado em construir aplicações
-                modernas e funcionais,
-                aprendendo
-                e aperfeiçoando minhas habilidades a cada projeto.</Test>
+            <Text style="margin: 0px;" type="title">Potfólio Profissional</Text>
+            <Text style="margin: 0px;" type="highlight">Criatividade que entrega resultados</Text>
+            <Text style="margin: 0px;" type="description">Sou designer e desenvolvedor focado em construir experiências
+                digitais modernas, acessíveis e com alta performance.</Text>
             <div class="buttons-hero">
                 <div class="buttons">
                     <Button @button-clicked="console.log('butao clicavel')" :is-primary="true"
@@ -30,11 +28,10 @@ import Button from './ui/VButton.vue'
 <style scoped>
 div.container-intro {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-between;
     gap: 20px;
-    width: 100%;
-    box-sizing: border-box;
+    padding: 20px;
 }
 
 .intro {
@@ -42,11 +39,7 @@ div.container-intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: white;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: left;
-
+    gap: 1.5rem;
 }
 
 .img-intro {
