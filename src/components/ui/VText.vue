@@ -54,6 +54,7 @@ export default {
 
 .paragraph {
   font-size: 1.5rem;
+  font-weight: lighter;
 }
 
 .description {
