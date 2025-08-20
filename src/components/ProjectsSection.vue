@@ -14,14 +14,14 @@ const items = [
 </script>
 
 <template>
-  <div class="section-container">
+  <div class="section-container" id="projectsSection">
     <div class="content-text">
       <VText style="margin: 0px;" type="highlight">Projetos</VText>
       <VText style="margin: 0px;" type="title">Uma seleção de trabalhos focados em experiência, performance e
         visual minimalista.</VText>
 
       <ul class="horizontal-list">
-        <li v-for="item in items" :key="item.id">
+        <li class="content-card" v-for="item in items" :key="item.id">
           <VCard :title="item.name" :description="item.description" :image="item.img" />
         </li>
       </ul>
@@ -38,10 +38,18 @@ const items = [
   gap: 1rem;
 }
 
-.horizontal-list li {
+.content-card {
   margin: 0px;
   padding: 16px;
   justify-content: flex-start;
 
+}
+
+.content-card {
+  transition: transform 0.3s ease;
+}
+
+.content-card:hover {
+  transform: scale(1.05);
 }
 </style>
