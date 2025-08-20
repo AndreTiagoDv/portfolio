@@ -43,13 +43,13 @@ const props = defineProps({
 .card-container {
   background-color: white;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(54, 254, 251, 0.481)0px 3px 3px;
   transition: transform 0.5s ease;
   justify-content: center;
 }
 
 .card-content:hover {
-  transform: scale (1.1);
+  transform: scale(1.1);
 }
 
 
@@ -70,6 +70,8 @@ const props = defineProps({
   background-color: #e8edfb;
   padding: 0.66rem;
   border-radius: 0.5rem;
+  --ci-primary-color:  rgba(0, 0, 255, 0.711);
+  fill: rgba(0, 0, 255, 0.711);
 }
 
 .container-icon {

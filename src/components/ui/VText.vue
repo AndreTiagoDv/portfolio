@@ -40,16 +40,15 @@ export default {
 
 
 .title {
-  font-size: 1.5rem; 
+  font-size: 1.3rem; 
   font-weight: lighter;
   color: rgba(115, 115, 115, 0.863);
-  font-family: sans-serif;
 }
 
 .highlight {
   font-size: 3.75rem;
   font-weight: bold;
-  font-family: 'Times New Roman', Times, serif;
+
 }
 
 .paragraph {
