@@ -1,21 +1,26 @@
-<script setup lang="ts">
+<script setup >
 import Image from '@/assets/hero.jpg';
 import Text from './ui/VText.vue';
 import Button from './ui/VButton.vue'
+import { CIcon } from '@coreui/icons-vue';
+import { cilArrowRight } from "@coreui/icons"
+
 </script>
 
 <template>
     <div class="section-container">
         <div class="section-content">
-            <Text style="margin: 0px;" type="title">Potfólio Profissional</Text>
+            <Text style="margin: 0px;" type="title">PORTIFÓLIO PROFISSIONAL</Text>
             <Text style="margin: 0px;" type="highlight">Criatividade que entrega resultados</Text>
             <Text style="margin: 0px;" type="description">Sou designer e desenvolvedor focado em construir experiências
                 digitais modernas, acessíveis e com alta performance.</Text>
             <div class="buttons-hero">
                 <div class="buttons">
-                    <Button @button-clicked="console.log('butao clicavel')" :is-primary="true"
-                        button-text="Ver portfólio" />
-                    <Button button-text="Fale comigo" />
+                    <Button @button-clicked="handleClick" :is-primary="true" target-id="projectsSection">
+                        Ver portfólio
+                        <CIcon :icon="cilArrowRight" class="icon-hero" />
+                    </Button>
+                    <Button button-text="Fale comigo" target-id="contactSection" @button-clicked="handleClick" />
                 </div>
             </div>
         </div>
@@ -26,11 +31,16 @@ import Button from './ui/VButton.vue'
 </template>
 
 <style scoped>
-
 .buttons {
     flex: 1;
     flex-direction: row;
     display: flex;
     gap: 0.70rem;
+    width: 30rem;
+}
+
+.icon-hero {
+    max-width: 1.5rem;
+    align-items: center;
 }
 </style>
