@@ -45,7 +45,7 @@ const items = [
   gap: 1rem;
   list-style: none;
   padding: 1rem;
-  transition: transform 0.5s ease;;
+  transition: transform 0.5s ease;
 }
 .content-card {
   transition: transform 0.3s ease;
