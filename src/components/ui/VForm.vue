@@ -3,44 +3,56 @@ import { ref } from "vue";
 import VButton from "./VButton.vue";
 import { supabase } from "../services/supabase.js";
 
-const nome = ref("");
+const name = ref("");
 const email = ref("");
 const message = ref("");
 
-const enviarFormulario = async () => {
-    if (!nome.value || !email.value || !message.value) {
+const sendForm = async () => {
+    if (!name.value || !email.value || !message.value) {
         alert("Preencha todos os campos!");
         return;
     }
 
-    const { data, error } = await supabase
-        .from('contatos')
-        .insert([
-            { nome: nome.value, email: email.value, mensagem: message.value }
-        ]);
+    try {
+        const response = await fetch("https://lxrzkspegyjlgmfsgkli.supabase.co/functions/send-email", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                name: name.value,
+                email: email.value,
+                message: message.value
+            })
+        });
 
-    if (error) {
-        alert("Erro ao enviar: " + error.message);
-    } else {
-        alert("Formulário enviado com sucesso!");
-        nome.value = "";
-        email.value = "";
-        message.value = "";
+        const result = await response.json();
+
+        if (result.success) {
+            alert("Mensagem enviada para seu e-mail!");
+            name.value = "";
+            email.value = "";
+            message.value = "";
+        } else {
+            alert("Erro ao enviar email: " + result.error);
+        }
+    } catch (err) {
+        alert("Erro ao enviar formulário: " + err.message);
     }
 };
+
 </script>
 
 
+
 <template>
-    <form @submit.prevent="enviarFormulario" class="contact-form">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" placeholder="Seu Nome" v-model="nome">
+    <form @submit.prevent="sendForm" class="contact-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" placeholder="Seu Nome" v-model="name">
         <label for="email">Email:</label>
         <input type="email" id="email" placeholder="seu@email.com" v-model="email">
         <label for="message">Mensagem:</label>
         <textarea id="message" placeholder="Como posso ajudar?" v-model="message"></textarea>
 
-        <VButton class="form-button" @button-clicked=" " :is-primary="true" button-text="Enviar Mensagem" />
+        <VButton class="form-button" @button-clicked="sendForm" :is-primary="true" button-text="Enviar Mensagem" />
 
     </form>
 </template>
