@@ -36,29 +36,9 @@ export default {
 }
 </script>
 
-<style  scoped>
+<style >
 
 
-.title {
-  font-size: 1.3rem; 
-  font-weight: lighter;
-  color: rgba(115, 115, 115, 0.863);
-}
 
-.highlight {
-  font-size: 3.75rem;
-  font-weight: bold;
 
-}
-
-.paragraph {
-  font-size: 1.5rem;
-  font-weight: lighter;
-}
-
-.description {
-  font-size: 1.25rem; 
-  font-weight: lighter;
-  color: rgba(115, 115, 115, 0.863);
-}
 </style>

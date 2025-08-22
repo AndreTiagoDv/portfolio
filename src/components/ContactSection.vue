@@ -31,11 +31,11 @@ const items = [
                         <li class="content-button" v-for="item in items">
                             <VButtonIcon class="button" :tooltip="item.information" :key="item.id" :icon="item.icon"
                                 :url="item.url" />
-
+    
                         </li>
                     </ul>
                 </div>
-
+    
             </div>
         </div>
     </div>
@@ -46,8 +46,8 @@ const items = [
 <style scoped>
 .contact-grid {
     display: flex;
-    gap: 2rem;
-
+    gap: 4rem;
+    width: 100%;
 }
 
 .form-container {

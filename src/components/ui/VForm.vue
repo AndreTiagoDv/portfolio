@@ -62,7 +62,8 @@ const sendForm = async () => {
 
         <div>
             <VButton class="form-button" :disabled="loading" :is-primary="true" @button-clicked="sendForm">
-                Enviar<CIcon :icon="cibMinutemailer" class="icon-form"/>
+                Enviar
+                <CIcon :icon="cibMinutemailer" class="icon-form" />
             </VButton>
         </div>
     </form>
@@ -89,7 +90,7 @@ const sendForm = async () => {
 }
 
 .form-button {
-    width: 30%;
+    width: 40%;
     align-self: flex-start;
 }
 
@@ -97,5 +98,17 @@ const sendForm = async () => {
     max-width: 1.5rem;
     align-items: center;
     fill: bisque;
+}
+
+@media (max-width: 768px) {
+    .form-button {
+        width: 40%;
+        align-self: flex-start;
+    }
+
+    .icon-form {
+        display: none;
+    }
+
 }
 </style>

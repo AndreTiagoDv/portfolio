@@ -29,13 +29,6 @@ const items = [
       <VCard :title="item.name" :icon="item.iconName" />
     </li>
   </ul>
-
-
-
-
-
-
-
 </template>
 
 <style scoped>

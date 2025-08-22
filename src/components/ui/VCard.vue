@@ -26,14 +26,19 @@ const props = defineProps({
 
 <template>
   <div class="card-container">
-    <img v-if="image" class="img-card" :src="image" />
-    <div class="container-icon">
-      <CIcon  v-if="icon" class="icon-card" :name="icon" />
-      <div class="card-content">
+    <div v-if="image">
+      <img class="img-card" :src="image" />
+      <div class="img-text">
         <VText style="margin: 0px;" type="paragraph">{{ title }}</VText>
         <VText style="margin: 0px;" type="description">{{ description }}</VText>
       </div>
     </div>
+    <div v-if="icon" class="container-icon">
+      <CIcon class="icon-card" :name="icon" />
+      <VText style="margin: 0px;" type="paragraph">{{ title }}</VText>
+      <VText style="margin: 0px;" type="description">{{ description }}</VText>
+    </div>
+
 
   </div>
 </template>
@@ -66,7 +71,7 @@ const props = defineProps({
   background-color: #e8edfb;
   padding: 0.66rem;
   border-radius: 0.5rem;
-  --ci-primary-color:  rgba(0, 0, 255, 0.711);
+  --ci-primary-color: rgba(0, 0, 255, 0.711);
   fill: rgba(0, 0, 255, 0.711);
 }
 
@@ -76,6 +81,15 @@ const props = defineProps({
   align-items: center;
   padding: 1rem;
   gap: 1rem;
-  height: 2rem;
+}
+
+.img-text {
+  min-height: 5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 </style>
