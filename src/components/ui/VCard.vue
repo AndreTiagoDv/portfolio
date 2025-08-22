@@ -43,7 +43,7 @@ const props = defineProps({
 .card-container {
   background-color: white;
   border-radius: 12px;
-  box-shadow: rgba(54, 254, 251, 0.481)0px 3px 3px;
+  box-shadow: rgba(54, 254, 251, 0.501)0px 10px 30px -10px;
   transition: transform 0.5s ease;
   justify-content: center;
 }
@@ -80,5 +80,6 @@ const props = defineProps({
   align-items: center;
   padding: 1rem;
   gap: 1rem;
+  height: 2rem;
 }
 </style>

@@ -37,7 +37,7 @@ function handleClick() {
 
 <style scoped>
 .icon-card {
-  width: 30px;
+  width: 1.5rem;
   background-color: #e8edfb;
   fill: blue;
   color:blue;
