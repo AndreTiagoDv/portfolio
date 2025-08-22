@@ -12,7 +12,7 @@ import { cilArrowRight } from "@coreui/icons"
         <div class="section-content">
             <Text style="margin: 0px;" type="title">PORTIFÓLIO PROFISSIONAL</Text>
             <Text style="margin: 0px;" type="highlight">Criatividade que entrega resultados</Text>
-            <Text style="margin: 0px;" type="description">Sou designer e desenvolvedor focado em construir experiências
+            <Text style="margin: 0px;" type="title">Sou designer e desenvolvedor focado em construir experiências
                 digitais modernas, acessíveis e com alta performance.</Text>
             <div class="buttons-hero">
                 <div class="buttons">
@@ -36,7 +36,6 @@ import { cilArrowRight } from "@coreui/icons"
     flex-direction: row;
     display: flex;
     gap: 0.70rem;
-    width: 30rem;
 }
 
 .icon-hero {

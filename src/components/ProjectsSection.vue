@@ -31,7 +31,6 @@ const items = [
 </template>
 
 <style scoped>
-
 .horizontal-list {
   display: flex;
   list-style: none;
@@ -52,4 +51,13 @@ const items = [
 .content-card:hover {
   transform: scale(1.05);
 }
+
+@media (max-width:768px){
+  .horizontal-list{
+    flex-direction: column;
+    padding: 1rem;
+    max-width: 20rem;
+  }
+}
+
 </style>

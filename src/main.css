@@ -97,11 +97,6 @@ a,
 
   }
 
-  .section-content {
-    padding: 2rem;
-    gap: 2rem;
-  }
-
   .section-img-content {
     min-width: 15rem;
   }
@@ -110,26 +105,20 @@ a,
 @media (max-width: 768px) {
   .section-container {
     display: flex;
-    padding: 2rem 2rem;
-    gap: 2rem;
     align-items: center;
+    width: 100%;
   }
 
   .section-content {
     align-items: center;
+    padding: 0px;
   }
 
   .section-img-container {
     display: none;
   }
 
-  ul.horizontal-list {
-    padding: 1rem;
-  }
 
-  img.img-card {
-    height: 5rem;
-  }
 
   .container-icon {
     display: flex;

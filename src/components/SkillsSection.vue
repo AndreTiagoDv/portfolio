@@ -19,13 +19,13 @@ const items = [
     <div class="content-text">
       <VText style="margin: 0px;" type="title"> Tecnologias</VText>
       <VText style="margin: 0px;" type="highlight">Habilidades</VText>
-      <VText style="margin: 0px;" type="description">Ferramentas e stacks que uso para criar produtos digitais modernos.
+      <VText style="margin: 0px;" type="title">Ferramentas e stacks que uso para criar produtos digitais modernos.
       </VText>
     </div>
   </div>
 
   <ul class="container-card">
-    <li  class="content-card" v-for="item in items" :key="item.id">
+    <li class="content-card" v-for="item in items" :key="item.id">
       <VCard :title="item.name" :icon="item.iconName" />
     </li>
   </ul>
@@ -40,11 +40,22 @@ const items = [
   padding: 1rem;
   transition: transform 0.5s ease;
 }
+
 .content-card {
   transition: transform 0.3s ease;
 }
 
 .content-card:hover {
   transform: scale(1.05);
+}
+
+@media (max-width:768px){
+  .container-card {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  list-style: none;
+  padding: 1rem;
+}
 }
 </style>

@@ -17,7 +17,7 @@ const items = [
         <div class="section-content">
             <VText type="title" style="margin:0">VAMOS CONVERSAR</VText>
             <VText type="highlight" style="margin:0">Contato</VText>
-            <VText type="description" style="margin:0">
+            <VText type="title" style="margin:0">
                 Preencha o formulário e retornarei o mais breve possível.
             </VText>
 
@@ -31,11 +31,11 @@ const items = [
                         <li class="content-button" v-for="item in items">
                             <VButtonIcon class="button" :tooltip="item.information" :key="item.id" :icon="item.icon"
                                 :url="item.url" />
-    
+
                         </li>
                     </ul>
                 </div>
-    
+
             </div>
         </div>
     </div>
@@ -77,5 +77,15 @@ const items = [
     flex-direction: column;
     padding: 1rem;
     margin-top: 0px;
+}
+
+@media (max-width: 768px) {
+.contact-grid {
+    width: 100%;
+    display: block;
+}
+.section-content{
+    padding: 0px;
+}
 }
 </style>
