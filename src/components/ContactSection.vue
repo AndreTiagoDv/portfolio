@@ -26,7 +26,7 @@ const items = [
                     <VForm />
                 </div>
                 <div class="container-card">
-                    <VText type="title" >Redes Sociais</VText>
+                    <VText type="title">Redes Sociais</VText>
                     <ul class="content-card" style="margin: 0px; padding: 0px;">
                         <li class="content-button" v-for="item in items">
                             <VButtonIcon class="button" :tooltip="item.information" :key="item.id" :icon="item.icon"
@@ -62,8 +62,8 @@ const items = [
     border-radius: 1rem;
     flex-direction: column;
     justify-content: center;
-     display: flex;              
-    justify-content: flex-start; 
+    display: flex;
+    justify-content: flex-start;
     height: 20%;
 
 }

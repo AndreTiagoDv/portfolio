@@ -48,10 +48,6 @@ const props = defineProps({
   justify-content: center;
 }
 
-.card-content:hover {
-  transform: scale(1.1);
-}
-
 
 .img-card {
   width: 100%;
