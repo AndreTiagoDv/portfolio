@@ -3,7 +3,7 @@ import VText from './ui/VText.vue';
 import VForm from './ui/VForm.vue';
 
 
-import { cibGithub, cibLinkedin, cibMinutemailer, } from '@coreui/icons';
+import { cibGithub, cibLinkedin } from '@coreui/icons';
 import VButtonIcon from './ui/VButtonIcon.vue';
 const items = [
     { id: 1, information: 'Github', icon: cibGithub, url: 'https://github.com/AndreTiagoDv' },
