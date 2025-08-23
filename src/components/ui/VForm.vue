@@ -83,7 +83,6 @@ const sendForm = async () => {
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
     padding: 0.8rem;
     border-radius: 0.5rem;
     border: 1px solid #d1d5db;

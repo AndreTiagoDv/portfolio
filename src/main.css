@@ -1,15 +1,11 @@
 #app {
+  display: grid;
   max-width: 100%;
+  padding: 2rem;
   font-weight: normal;
   font-family: 'Times New Roman', Times, serif;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
 
 .section-img-container {
   flex: 1;
@@ -131,5 +127,15 @@ a,
   .description {
     font-size: 0.88rem;
   }
+  .title {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: rgba(115, 115, 115, 0.863);
+}
+  .highlight {
+  font-size: 2rem;
+  font-weight: bold;
+
+}
 
 }

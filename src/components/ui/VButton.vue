@@ -10,7 +10,7 @@ export default {
             type: Boolean,
             default: false
         },
-        targetId: {             
+        targetId: {
             type: String,
             default: null
         }
@@ -67,5 +67,16 @@ button.primary:hover {
 button:hover {
     background-color: #b4d8ed94;
     transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    button {
+        gap: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 0.9rem;
+    }
 }
 </style>

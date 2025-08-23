@@ -1,4 +1,4 @@
-<script setup >
+<script setup>
 import Image from '@/assets/hero.jpg';
 import Text from './ui/VText.vue';
 import Button from './ui/VButton.vue'
@@ -41,5 +41,18 @@ import { cilArrowRight } from "@coreui/icons"
 .icon-hero {
     max-width: 1.5rem;
     align-items: center;
+}
+
+@media (max-width: 768px)
+{
+Button{
+    white-space: nowrap;
+}
+
+.icon-hero {
+   display: none;
+
+}
+
 }
 </style>
