@@ -1,10 +1,10 @@
 <script setup>
-import VText from './ui/VText.vue';
-import VForm from './ui/VForm.vue';
-
+import VText from '../ui/VText.vue';
+import VForm from '../ui/VForm.vue';
+import VButtonIcon from '../ui/VButtonIcon.vue';
 
 import { cibGithub, cibLinkedin } from '@coreui/icons';
-import VButtonIcon from './ui/VButtonIcon.vue';
+
 const items = [
     { id: 1, information: 'Github', icon: cibGithub, url: 'https://github.com/AndreTiagoDv' },
     { id: 2, information: 'Linkedin', icon: cibLinkedin, url: 'https://www.linkedin.com/in/andre-tiago-80773a298/' },

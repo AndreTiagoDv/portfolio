@@ -71,6 +71,7 @@ button:hover {
 
 @media (max-width: 768px) {
     button {
+        border: none;
         gap: 1rem;
         display: flex;
         justify-content: center;

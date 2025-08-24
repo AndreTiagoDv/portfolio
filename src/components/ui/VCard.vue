@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import type { PropType } from 'vue';
 import VText from './VText.vue';
 import { CIcon } from '@coreui/icons-vue';
 

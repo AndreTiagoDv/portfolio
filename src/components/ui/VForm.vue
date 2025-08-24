@@ -1,52 +1,11 @@
 <script setup>
-import { ref } from "vue";
 import VButton from "./VButton.vue";
 import { CIcon } from '@coreui/icons-vue';
 import { cibMinutemailer } from '@coreui/icons'
+import { useContactForm } from "@/composables/useContactForm";
 
+const { name, email, message, loading, sendForm } = useContactForm();
 
-
-const name = ref("");
-const email = ref("");
-const message = ref("");
-const loading = ref(false);
-
-const sendForm = async () => {
-    if (!name.value || !email.value || !message.value) {
-        alert("Preencha todos os campos!");
-        return;
-    }
-
-    loading.value = true;
-
-    try {
-        const response = await fetch("https://lxrzkspegyjlgmfsgkli.supabase.co/functions/v1/resend-email", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                name: name.value,
-                email: email.value,
-                message: message.value
-            })
-        });
-
-        const result = await response.json();
-
-        if (response.ok && result.success) {
-            alert("Mensagem enviada com sucesso!");
-            name.value = "";
-            email.value = "";
-            message.value = "";
-        } else {
-            alert("Erro ao enviar email: " + (result.error || "Erro desconhecido"));
-        }
-
-    } catch (err) {
-        alert("Erro ao enviar formulário: " + err.message);
-    } finally {
-        loading.value = false;
-    }
-};
 </script>
 
 <template>
