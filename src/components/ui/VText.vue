@@ -1,18 +1,12 @@
-<template>
-  <component :is="tag" :class="['texto', type]">
-    <slot></slot>
-  </component>
-</template>
-
 <script lang="ts">
 import type { PropType } from 'vue';
 
 export default {
   props: {
     type: {
-      type: String as PropType<'highlight'|'title'|'paragraph'|'description'>,
+      type: String as PropType<'highlight' | 'title' | 'paragraph' | 'description'>,
       default: 'paragraph',
-      validator: function (value:string) {
+      validator: function (value: string) {
         return ['highlight', 'title', 'paragraph', 'description'].includes(value)
       }
     }
@@ -35,10 +29,11 @@ export default {
   }
 }
 </script>
+<template>
+  <component :is="tag" :class="['texto', type]">
+    <slot></slot>
+  </component>
+</template>
 
-<style >
 
-
-
-
-</style>
+<style></style>

@@ -1,31 +1,24 @@
 <script setup>
-import HeroSection from './components/HeroSection.vue';
-import AboutMeSection from './components/AboutMeSection.vue';
-import ProjectsSection from './components/ProjectsSection.vue';
-import SkillsSection from './components/SkillsSection.vue';
-import ContactSection from './components/ContactSection.vue';
-import footerSection from "./components/FooterSection.vue";
+import SectionHero from './components/sections/SectionHero.vue';
+import SectionAboutMe from './components/sections/SectionAboutMe.vue';
+import SectionProjects from './components/sections/SectionProjects.vue';
+import SectionSkills from './components/sections/SectionSkills.vue';
+import SectionContacts from './components/sections/SectionContacts.vue';
+import SectionFooter from "./components/sections/SectionFooter.vue";
 
 </script>
 
 
 <template>
-
-  <HeroSection />
-  <AboutMeSection />
-  <ProjectsSection />
-  <SkillsSection />
-  <ContactSection />
-  <footerSection />
-
-
+  <SectionHero />
+  <SectionAboutMe />
+  <SectionProjects />
+  <SectionSkills />
+  <SectionContacts />
+  <SectionFooter />
 </template>
 
 
 <style scoped>
-.main-container {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr;
-}
+
 </style>

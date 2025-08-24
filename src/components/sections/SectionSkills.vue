@@ -1,7 +1,9 @@
 <script setup>
-import VText from './ui/VText.vue';
-import VCard from './ui/VCard.vue';
+import VText from '../ui/VText.vue';
+import VCard from '../ui/VCard.vue';
+
 import { cibTypescript, cibHtml5, cibReact, cibJavascript, cilPaintBucket, cibVueJs } from '@coreui/icons';
+
 const items = [
   { id: 1, name: 'TypeScript', iconName: cibTypescript },
   { id: 2, name: 'HTML & CSS', iconName: cibHtml5 },

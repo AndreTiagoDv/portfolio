@@ -1,7 +1,8 @@
 <script setup>
-import Image from '@/assets/hero.jpg';
-import Text from './ui/VText.vue';
-import Button from './ui/VButton.vue'
+import Image from '@/assets/images/hero.jpg';
+import Text from '../ui/VText.vue';
+import Button from '../ui/VButton.vue'
+
 import { CIcon } from '@coreui/icons-vue';
 import { cilArrowRight } from "@coreui/icons"
 
