@@ -11,9 +11,9 @@ import { cilArrowRight } from "@coreui/icons"
 <template>
     <div class="section-container">
         <div class="section-content">
-            <Text style="margin: 0px;" type="title">PORTIFÓLIO PROFISSIONAL</Text>
-            <Text style="margin: 0px;" type="highlight">Criatividade que entrega resultados</Text>
-            <Text style="margin: 0px;" type="title">Sou designer e desenvolvedor focado em construir experiências
+            <Text type="title">PORTIFÓLIO PROFISSIONAL</Text>
+            <Text type="highlight">Criatividade que entrega resultados</Text>
+            <Text type="title">Sou designer e desenvolvedor focado em construir experiências
                 digitais modernas, acessíveis e com alta performance.</Text>
             <div class="buttons-hero">
                 <div class="buttons">
@@ -44,16 +44,15 @@ import { cilArrowRight } from "@coreui/icons"
     align-items: center;
 }
 
-@media (max-width: 768px)
-{
-Button{
-    white-space: nowrap;
-}
+@media (max-width: 768px) {
+    Button {
+        white-space: nowrap;
+    }
 
-.icon-hero {
-   display: none;
+    .icon-hero {
+        display: none;
 
-}
+    }
 
 }
 </style>

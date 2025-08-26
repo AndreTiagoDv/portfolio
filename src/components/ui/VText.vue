@@ -1,34 +1,21 @@
-<script lang="ts">
-import type { PropType } from 'vue';
+<script setup lang="ts">
+import { computed, type PropType } from 'vue';
+import type { VTextProps, TextType } from '@/types/VText';
 
-export default {
-  props: {
-    type: {
-      type: String as PropType<'highlight' | 'title' | 'paragraph' | 'description'>,
-      default: 'paragraph',
-      validator: function (value: string) {
-        return ['highlight', 'title', 'paragraph', 'description'].includes(value)
-      }
-    }
-  },
-  computed: {
-    tag() {
-      switch (this.type) {
-        case 'highlight':
-          return 'h1';
-        case 'title':
-          return 'h2';
-        case 'paragraph':
-          return 'p';
-        case 'description':
-          return 'h4';
-        default:
-          return 'p';
-      }
-    }
+const props = defineProps<VTextProps>();
+
+
+
+const tag = computed(() => {
+  switch (props.type) {
+    case 'highlight': return 'h1';
+    case 'title': return 'h2';
+    case 'description': return 'h4';
+    default: return 'p';
   }
-}
+});
 </script>
+
 <template>
   <component :is="tag" :class="['texto', type]">
     <slot></slot>
@@ -36,4 +23,8 @@ export default {
 </template>
 
 
-<style></style>
+<style>
+.texto{
+  margin: 0;
+}
+</style>

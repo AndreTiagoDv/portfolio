@@ -80,12 +80,13 @@ const items = [
 }
 
 @media (max-width: 768px) {
-.contact-grid {
-    width: 100%;
-    display: block;
-}
-.section-content{
-    padding: 0px;
-}
+    .contact-grid {
+        width: 100%;
+        display: block;
+    }
+
+    .section-content {
+        padding: 0px;
+    }
 }
 </style>
