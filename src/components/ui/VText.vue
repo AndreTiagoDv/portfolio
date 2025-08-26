@@ -4,16 +4,13 @@ import type { VTextProps, TextType } from '@/types/VText';
 
 const props = defineProps<VTextProps>();
 
-
-
-const tag = computed(() => {
-  switch (props.type) {
-    case 'highlight': return 'h1';
-    case 'title': return 'h2';
-    case 'description': return 'h4';
-    default: return 'p';
-  }
-});
+const tagmap: Record<TextType,string>={
+  highlight: "h1",
+  title:"h2",
+  description:"h4",
+  paragraph:"p"
+};
+const tag = computed(()=>tagmap[props.type??'paragraph'])
 </script>
 
 <template>
