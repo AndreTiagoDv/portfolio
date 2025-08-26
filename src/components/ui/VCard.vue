@@ -2,25 +2,13 @@
 import VText from './VText.vue';
 import { CIcon } from '@coreui/icons-vue';
 
-const props = defineProps({
-  title: {
-    type: String,
-    default: ''
-  },
-  description: {
-    type: String,
-    default: null
-  },
-  image: {
-    type: String,
-    default: null
-  },
-  icon: {
-    type: String,
-    default: null
+const props = defineProps<{
+  title: string;
+  description?: string;
+  image?: string;
+  icon?: string;
+}>();
 
-  }
-})
 </script>
 
 <template>
@@ -28,14 +16,14 @@ const props = defineProps({
     <div v-if="image">
       <img class="img-card" :src="image" />
       <div class="img-text">
-        <VText style="margin: 0px;" type="paragraph">{{ title }}</VText>
-        <VText style="margin: 0px;" type="description">{{ description }}</VText>
+        <VText  type="paragraph">{{ title }}</VText>
+        <VText  type="description">{{ description }}</VText>
       </div>
     </div>
     <div v-if="icon" class="container-icon">
-      <CIcon class="icon-card" :name="icon" />
-      <VText style="margin: 0px;" type="paragraph">{{ title }}</VText>
-      <VText style="margin: 0px;" type="description">{{ description }}</VText>
+      <CIcon class="icon-card" :icon="icon" />
+      <VText  type="paragraph">{{ title }}</VText>
+      <VText  type="description">{{ description }}</VText>
     </div>
 
 

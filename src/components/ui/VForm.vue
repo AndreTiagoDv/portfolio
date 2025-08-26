@@ -9,7 +9,7 @@ const { name, email, message, loading, sendForm } = useContactForm();
 </script>
 
 <template>
-    <form @submit.prevent="sendForm" class="contact-form">
+    <form class="contact-form">
         <label for="name">Nome:</label>
         <input type="text" id="name" placeholder="Seu Nome" v-model="name">
 

@@ -46,7 +46,7 @@ button {
     align-items: center;
     padding: 0.83rem;
     font-size: 1rem;
-    background-color: #f2f5f8;
+    background-color:var(--color-neutral-50);
     width: 100%;
     border-radius: 0.5rem;
     border: none;
@@ -54,18 +54,18 @@ button {
 }
 
 button.primary {
-    background-color: #335fdb;
-    color: #f4f7fa;
+    background-color:var(--color-primary);
+    color:var(--color-neutral-50);
 
 }
 
 button.primary:hover {
-    background-color: #3965ddd0;
+    background-color:var(--color-primary-hover);
     transform: scale(1.03);
 }
 
 button:hover {
-    background-color: #b4d8ed94;
+    background-color: var(--color-secondary-hover);
     transform: scale(1.03);
 }
 

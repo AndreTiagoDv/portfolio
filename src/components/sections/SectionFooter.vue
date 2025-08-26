@@ -15,9 +15,10 @@ import VText from '../ui/VText.vue';
 
 <style>
 .container-footer {
-    background-color: white;
+    --color-bg: var(--color-neutral-500);
     width: 100%;
     display: flex;
     justify-content: center;
+    height: 5rem;
 }
 </style>
