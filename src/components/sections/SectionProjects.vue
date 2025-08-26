@@ -18,8 +18,8 @@ const items = [
 <template>
   <div class="section-container" id="projectsSection">
     <div class="content-text">
-      <VText style="margin: 0px;" type="highlight">Projetos</VText>
-      <VText style="margin: 0px;" type="title">Uma seleção de trabalhos focados em experiência, performance e
+      <VText type="highlight">Projetos</VText>
+      <VText type="title">Uma seleção de trabalhos focados em experiência, performance e
         visual minimalista.</VText>
 
       <ul class="horizontal-list">
@@ -54,12 +54,11 @@ const items = [
   transform: scale(1.05);
 }
 
-@media (max-width:768px){
-  .horizontal-list{
+@media (max-width:768px) {
+  .horizontal-list {
     flex-direction: column;
     padding: 1rem;
     max-width: 20rem;
   }
 }
-
 </style>

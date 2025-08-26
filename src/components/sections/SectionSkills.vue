@@ -19,9 +19,9 @@ const items = [
 <template>
   <div class="section-container">
     <div class="content-text">
-      <VText style="margin: 0px;" type="title"> Tecnologias</VText>
-      <VText style="margin: 0px;" type="highlight">Habilidades</VText>
-      <VText style="margin: 0px;" type="title">Ferramentas e stacks que uso para criar produtos digitais modernos.
+      <VText type="title"> Tecnologias</VText>
+      <VText type="highlight">Habilidades</VText>
+      <VText type="title">Ferramentas e stacks que uso para criar produtos digitais modernos.
       </VText>
     </div>
   </div>
@@ -51,13 +51,13 @@ const items = [
   transform: scale(1.05);
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
   .container-card {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1rem;
-  list-style: none;
-  padding: 1rem;
-}
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    list-style: none;
+    padding: 1rem;
+  }
 }
 </style>
