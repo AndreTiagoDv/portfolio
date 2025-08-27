@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { computed } from 'vue';
-import type { VTextProps, TextType } from '@/types/VText';
+  import { computed } from 'vue';
+  import type { VTextProps, TextType } from '@/types/VText';
 
-const props = defineProps<VTextProps>();
+  const props = defineProps<VTextProps>();
 
-const tagmap: Record<TextType,string>={
-  highlight: "h1",
-  title:"h2",
-  description:"h4",
-  paragraph:"p"
-};
-const tag = computed(()=>tagmap[props.type??'paragraph'])
+  const tagmap: Record<TextType, string> = {
+    highlight: 'h1',
+    title: 'h2',
+    description: 'h4',
+    paragraph: 'p',
+  };
+  const tag = computed(() => tagmap[props.type ?? 'paragraph']);
 </script>
 
 <template>
@@ -19,9 +19,8 @@ const tag = computed(()=>tagmap[props.type??'paragraph'])
   </component>
 </template>
 
-
 <style>
-.texto{
-  margin: 0;
-}
+  .texto {
+    margin: 0;
+  }
 </style>

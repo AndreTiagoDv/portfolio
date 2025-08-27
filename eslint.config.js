@@ -25,5 +25,5 @@ export default typescriptEslint.config(
       // your rules
     },
   },
-  eslintConfigPrettier
+  eslintConfigPrettier,
 );
