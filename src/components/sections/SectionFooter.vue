@@ -1,24 +1,19 @@
 <script setup>
-import VText from '../ui/VText.vue';
-
-
+  import VText from '../ui/VText.vue';
 </script>
 
 <template>
-    <div class="container-footer">
-        <VText type="description">
-            &copy; 2025 Andre Tiago — Todos os direitos reservados
-        </VText>
-    </div>
-
+  <div class="container-footer">
+    <VText type="description"> &copy; 2025 Andre Tiago — Todos os direitos reservados </VText>
+  </div>
 </template>
 
 <style>
-.container-footer {
+  .container-footer {
     --color-bg: var(--color-neutral-500);
     width: 100%;
     display: flex;
     justify-content: center;
     height: 5rem;
-}
+  }
 </style>
