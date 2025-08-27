@@ -13,7 +13,7 @@ const items = [
 </script>
 
 <template>
-    <div class="section-container" id="contactSection">
+    <div id="contactSection" class="section-container">
         <div class="section-content">
             <VText type="title" style="margin:0">VAMOS CONVERSAR</VText>
             <VText type="highlight" style="margin:0">Contato</VText>
@@ -28,8 +28,9 @@ const items = [
                 <div class="container-card">
                     <VText type="title">Redes Sociais</VText>
                     <ul class="content-card" style="margin: 0px; padding: 0px;">
-                        <li class="content-button" v-for="item in items">
-                            <VButtonIcon class="button" :tooltip="item.information" :key="item.id" :icon="item.icon"
+                        <li v-for="item in items" :key="item.id" class="content-button">
+                            <VButtonIcon
+:key="item.id" class="button" :tooltip="item.information" :icon="item.icon"
                                 :url="item.url" />
 
                         </li>

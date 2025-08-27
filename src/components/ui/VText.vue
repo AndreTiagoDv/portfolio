@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, type PropType } from 'vue';
+import { computed } from 'vue';
 import type { VTextProps, TextType } from '@/types/VText';
 
 const props = defineProps<VTextProps>();

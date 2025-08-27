@@ -16,14 +16,14 @@ const items = [
 </script>
 
 <template>
-  <div class="section-container" id="projectsSection">
+  <div id="projectsSection" class="section-container">
     <div class="content-text">
       <VText type="highlight">Projetos</VText>
       <VText type="title">Uma seleção de trabalhos focados em experiência, performance e
         visual minimalista.</VText>
 
       <ul class="horizontal-list">
-        <li class="content-card" v-for="item in items" :key="item.id">
+        <li v-for="item in items" :key="item.id" class="content-card">
           <VCard :title="item.name" :description="item.description" :image="item.img" />
         </li>
       </ul>

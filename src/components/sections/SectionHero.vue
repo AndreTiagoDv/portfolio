@@ -17,7 +17,7 @@ import { cilArrowRight } from "@coreui/icons"
                 digitais modernas, acessíveis e com alta performance.</Text>
             <div class="buttons-hero">
                 <div class="buttons">
-                    <Button @button-clicked="handleClick" :is-primary="true" target-id="projectsSection">
+                    <Button :is-primary="true" target-id="projectsSection" @button-clicked="handleClick">
                         Ver portfólio
                         <CIcon :icon="cilArrowRight" class="icon-hero" />
                     </Button>

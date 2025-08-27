@@ -2,7 +2,7 @@
 import VText from './VText.vue';
 import { CIcon } from '@coreui/icons-vue';
 
-const props = defineProps<{
+defineProps<{
   title: string;
   description?: string;
   image?: string;
