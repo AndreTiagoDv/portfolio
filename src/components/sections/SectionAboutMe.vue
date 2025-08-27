@@ -6,7 +6,7 @@ import AboutImage from '@/assets/images/about-me.jpg'
 <template>
     <div class="section-container">
         <div class="section-img-container">
-            <img class="section-img-content" :src="AboutImage" alt="about-me"></img>
+            <img class="section-img-content" :src="AboutImage" alt="about-me"/>
         </div>
         <div class="section-content">
             <VText type="highlight">Sobre mim</VText>

@@ -27,7 +27,7 @@ const items = [
   </div>
 
   <ul class="container-card">
-    <li class="content-card" v-for="item in items" :key="item.id">
+    <li v-for="item in items" :key="item.id" class="content-card">
       <VCard :title="item.name" :icon="item.iconName" />
     </li>
   </ul>

@@ -11,13 +11,13 @@ const { name, email, message, loading, sendForm } = useContactForm();
 <template>
     <form class="contact-form">
         <label for="name">Nome:</label>
-        <input type="text" id="name" placeholder="Seu Nome" v-model="name">
+        <input id="name" v-model="name" type="text" placeholder="Seu Nome">
 
         <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="seu@email.com" v-model="email">
+        <input id="email" v-model="email" type="email" placeholder="seu@email.com">
 
         <label for="message">Mensagem:</label>
-        <textarea id="message" placeholder="Como posso ajudar?" v-model="message"></textarea>
+        <textarea id="message" v-model="message" placeholder="Como posso ajudar?"></textarea>
 
         <div>
             <VButton class="form-button" :disabled="loading" :is-primary="true" @button-clicked="sendForm">

@@ -33,7 +33,7 @@ export default {
 
 
 <template>
-    <button @click="handleClick" :class="{ 'primary': isPrimary }">
+    <button :class="{ 'primary': isPrimary }" @click="handleClick">
         <slot>{{ buttonText }}</slot>
     </button>
 </template>
