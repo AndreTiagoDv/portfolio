@@ -24,6 +24,17 @@
   --color-bg-alt: var(--color-neutral-100);
   --color-text: var(--color-neutral-900);
   --color-text-muted: var(--color-neutral-600);
+
+  --color-box-shadow: rgba(54, 254, 251, 0.501);
+
+  --font-family-base:'Times New Roman', Times, serif;
+  --text-highlight-size: 2.5rem; 
+  --text-title-size: 1.3rem;     
+  --text-paragraph-size: 1rem;     
+  --text-description-size: 0.875rem;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
 }
 
 [data-theme='dark'] {
