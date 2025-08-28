@@ -28,10 +28,12 @@
   --color-box-shadow: rgba(54, 254, 251, 0.501);
 
   --font-family-base:'Times New Roman', Times, serif;
-  --text-highlight-size: 2.5rem; 
-  --text-title-size: 1.3rem;     
-  --text-paragraph-size: 1rem;     
-  --text-description-size: 0.875rem;
+  --font-size-xlg: 3rem; /* highlight */
+  --font-size-lg: 2rem;   /*title */
+  --font-size-md: 1.5rem;   /* paragraph */
+  --font-size-sm: 1.25rem;  /* description */
+  --font-size-xs: 1rem;
+  --font-size-xxs: 0.8rem
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
