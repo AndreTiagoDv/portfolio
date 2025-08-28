@@ -1,30 +1,21 @@
 <script setup lang="ts">
-  import { defineProps, defineEmits } from 'vue';
-  import { CIcon } from '@coreui/icons-vue';
-  const props = defineProps({
-    tooltip: {
-      type: String,
-      default: '',
-    },
-    url: {
-      type: String,
-      default: '',
-    },
-    icon: {
-      type: String,
-      default: null,
-    },
-  });
+import { defineProps, defineEmits } from 'vue';
+import { CIcon } from '@coreui/icons-vue';
+import type{ VButtonIconProps } from '@/types/VButtonIcon';
 
-  const emit = defineEmits(['button-clicked']);
+const props = defineProps<VButtonIconProps>()
 
-  function handleClick() {
-    if (props.url) {
-      window.open(props.url, '_blank');
-    } else {
-      emit('button-clicked');
-    }
+const emit = defineEmits<{
+  (e: 'button-clicked'):void
+}>();
+
+function handleClick() {
+  if (props.url) {
+    window.open(props.url, '_blank');
+  } else {
+    emit('button-clicked');
   }
+}
 </script>
 
 <template>
@@ -35,43 +26,44 @@
 </template>
 
 <style scoped>
-  .icon-card {
-    width: 1.5rem;
-    background-color: var(--color-neutral-50);
-    fill: var(--color-primary);
-    color: var(--color-primary);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    align-items: center;
-    transition: transform 0.5s ease;
-  }
-  .icon-card:hover {
-    transform: scale(1.1);
-  }
+.icon-card {
+  width: 1.5rem;
+  background-color: var(--color-neutral-50);
+  fill: var(--color-primary);
+  color: var(--color-primary);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
 
-  .tooltip-wrapper {
-    position: relative;
-    display: inline-block;
-  }
+.icon-card:hover {
+  transform: scale(1.1);
+}
 
-  .tooltip-text {
-    visibility: hidden;
-    background-color: var(--color-neutral-600);
-    color: var(--color-neutral-50);
-    font-size: var(--font-size-xs);
-    padding: 0.4rem 0.6rem;
-    border-radius: 0.3rem;
-    position: absolute;
-    bottom: 120%;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
 
-  .tooltip-wrapper:hover .tooltip-text {
-    visibility: visible;
-    opacity: 1;
-  }
+.tooltip-text {
+  visibility: hidden;
+  background-color: var(--color-neutral-600);
+  color: var(--color-neutral-50);
+  font-size: var(--font-size-xs);
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.3rem;
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tooltip-wrapper:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
 </style>
