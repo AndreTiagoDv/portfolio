@@ -1,36 +1,24 @@
-<script lang="ts">
-  export default {
-    props: {
-      buttonText: {
-        type: String,
-        default: ' ',
-      },
-      isPrimary: {
-        type: Boolean,
-        default: false,
-      },
-      targetId: {
-        type: String,
-        default: null,
-      },
-    },
-    emits: ['button-clicked'],
-    methods: {
-      handleClick() {
-        this.$emit('button-clicked');
+<script setup lang="ts">
+  import type { VButtonProps } from '@/types/VButton';
 
-        if (this.targetId) {
-          const el = document.getElementById(this.targetId);
-          if (el) el.scrollIntoView({ behavior: 'smooth' });
-        }
-      },
-    },
-  };
+  const props = defineProps<VButtonProps>();
+  const emit = defineEmits<{
+    (e: 'button-clicked'): void;
+  }>();
+
+  function handleClick() {
+    emit('button-clicked');
+
+    if (props.targetId) {
+      const el = document.getElementById(props.targetId);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 </script>
 
 <template>
-  <button :class="{ primary: isPrimary }" @click="handleClick">
-    <slot>{{ buttonText }}</slot>
+  <button :class="{ primary: props.isPrimary }" @click="handleClick">
+    <slot>{{ props.buttonText }}</slot>
   </button>
 </template>
 
