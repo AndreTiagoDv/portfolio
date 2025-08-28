@@ -41,7 +41,7 @@
   }
 
   .contact-form label {
-    font-weight:var(--font-weigth-bold);
+    font-weight: var(--font-weigth-bold);
   }
 
   .contact-form input,
@@ -59,7 +59,7 @@
   .icon-form {
     max-width: 1.5rem;
     align-items: center;
-    fill:var(--color-neutral-50);
+    fill: var(--color-neutral-50);
   }
 
   @media (max-width: 768px) {

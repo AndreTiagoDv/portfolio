@@ -58,7 +58,7 @@
     visibility: hidden;
     background-color: var(--color-neutral-600);
     color: var(--color-neutral-50);
-    font-size:var(--font-size-xs);
+    font-size: var(--font-size-xs);
     padding: 0.4rem 0.6rem;
     border-radius: 0.3rem;
     position: absolute;

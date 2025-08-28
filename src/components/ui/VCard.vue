@@ -29,7 +29,7 @@
 
 <style scoped>
   .card-container {
-    background-color:var(--color-neutral-50);
+    background-color: var(--color-neutral-50);
     border-radius: 12px;
     box-shadow: 0px 10px 30px -10px var(--color-box-shadow);
     transition: transform 0.5s ease;
