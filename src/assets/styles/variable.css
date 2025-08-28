@@ -4,7 +4,7 @@
   --color-primary-hover: #3965ddd0;
   --color-secondary: #f2f5f894;
   --color-secondary-hover: #b4d8ed94;
-  /* warning color */
+
   --color-success: #10b981;
   --color-warning: #f59e0b;
   --color-error: #ef4444;
@@ -26,6 +26,15 @@
   --color-text-muted: var(--color-neutral-600);
 
   --color-box-shadow: rgba(54, 254, 251, 0.501);
+
+  --font-family-base:'Times New Roman', Times, serif;
+  --text-highlight-size: 2.5rem; 
+  --text-title-size: 1.3rem;     
+  --text-paragraph-size: 1rem;     
+  --text-description-size: 0.875rem;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
 }
 
 [data-theme='dark'] {
