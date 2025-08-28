@@ -41,7 +41,7 @@
     justify-content: center;
     align-items: center;
     padding: 0.83rem;
-    font-size: 1rem;
+    font-size:var(--font-size-xs);
     background-color: var(--color-neutral-50);
     width: 100%;
     border-radius: 0.5rem;
