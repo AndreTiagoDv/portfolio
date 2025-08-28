@@ -14,6 +14,7 @@
         default: null,
       },
     },
+    emits: ['button-clicked'],
     methods: {
       handleClick() {
         this.$emit('button-clicked');
