@@ -3,18 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "engines": {
-    "node": "^20.19.0 || >=22.12.0"
-  },
   "scripts": {
-    "dev": "npm run format && vite ",
+    "dev": "npm run format && vite",
     "build": "run-p type-check \"build-only {@}\" -- ",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "lint": "eslint --ext .vue,.ts,.js src",
     "lint:fix": "eslint --ext .vue,.ts,.js src --fix",
-    "format": "prettier .  --write",
+    "format": "prettier . --write",
     "prepare": "husky"
   },
   "dependencies": {
@@ -24,6 +21,8 @@
     "vue": "^3.5.18"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@eslint/js": "^9.34.0",
     "@tsconfig/node22": "^22.0.2",
     "@types/node": "^22.16.5",
@@ -44,5 +43,11 @@
     "vite": "^7.0.6",
     "vite-plugin-vue-devtools": "^8.0.0",
     "vue-tsc": "^3.0.4"
+  },
+  "lint-staged": {
+    "*.{ts,vue,js}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
