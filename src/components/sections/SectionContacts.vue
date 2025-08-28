@@ -63,7 +63,7 @@
   .container-card {
     flex: 1;
     padding: 1rem;
-    box-shadow: rgba(54, 254, 251, 0.501) 0px 10px 30px -10px;
+    box-shadow: 0px 10px 30px -10px var(--color-box-shadow);
     border-radius: 1rem;
     flex-direction: column;
     justify-content: center;

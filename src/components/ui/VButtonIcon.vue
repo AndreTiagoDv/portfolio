@@ -37,9 +37,9 @@
 <style scoped>
   .icon-card {
     width: 1.5rem;
-    background-color: #e8edfb;
-    fill: blue;
-    color: blue;
+    background-color: var(--color-neutral-50);
+    fill: var(--color-primary);
+    color: var(--color-primary);
     padding: 0.5rem;
     border-radius: 0.5rem;
     align-items: center;
@@ -56,8 +56,8 @@
 
   .tooltip-text {
     visibility: hidden;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--color-neutral-600);
+    color: var(--color-neutral-50);
     font-size: 0.8rem;
     padding: 0.4rem 0.6rem;
     border-radius: 0.3rem;

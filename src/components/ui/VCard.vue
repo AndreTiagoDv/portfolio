@@ -31,7 +31,7 @@
   .card-container {
     background-color: white;
     border-radius: 12px;
-    box-shadow: rgba(54, 254, 251, 0.501) 0px 10px 30px -10px;
+    box-shadow: 0px 10px 30px -10px var(--color-box-shadow);
     transition: transform 0.5s ease;
     justify-content: center;
   }
@@ -49,11 +49,11 @@
 
   .icon-card {
     width: 1.3rem;
-    background-color: #e8edfb;
+    background-color: var(--color-neutral-50);
     padding: 0.66rem;
     border-radius: 0.5rem;
-    --ci-primary-color: rgba(0, 0, 255, 0.711);
-    fill: rgba(0, 0, 255, 0.711);
+    color: var(--color-primary);
+    fill: var(--color-primary);
   }
 
   .container-icon {
