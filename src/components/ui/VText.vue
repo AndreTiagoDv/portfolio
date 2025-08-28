@@ -3,18 +3,19 @@
   import type { VTextProps, TextType } from '@/types/VText';
 
   const props = defineProps<VTextProps>();
-
   const tagmap: Record<TextType, string> = {
     highlight: 'h1',
     title: 'h2',
     description: 'h4',
     paragraph: 'p',
   };
+
   const tag = computed(() => tagmap[props.type ?? 'paragraph']);
+  const className = computed(() => props.type ?? "paragraph"); //classe valida mesmo sem type
 </script>
 
 <template>
-  <component :is="tag" :class="['texto', type]">
+  <component :is="tag" :class="['texto', className, props.class]" v-bind="props">
     <slot></slot>
   </component>
 </template>
