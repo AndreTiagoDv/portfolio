@@ -33,7 +33,6 @@ export default [
 
       // Vue
       'vue/multi-word-component-names': 'off',
-      'vue/html-indent': ['warn', 2],
 
       // Geral
       'no-console': ['warn', { allow: ['warn', 'error'] }],

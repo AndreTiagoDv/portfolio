@@ -11,7 +11,7 @@
   };
 
   const tag = computed(() => tagmap[props.type ?? 'paragraph']);
-  const className = computed(() => props.type ?? "paragraph"); //classe valida mesmo sem type
+  const className = computed(() => props.type ?? 'paragraph'); //classe valida mesmo sem type
 </script>
 
 <template>
