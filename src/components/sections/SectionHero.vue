@@ -17,10 +17,13 @@
       >
       <div class="buttons-hero">
         <div class="buttons">
-          <Button variant="primary" target-id="projectsSection" @button-clicked="handleClick">
-            Ver portfólio
-            <CIcon :icon="cilArrowRight" class="icon-hero" />
-          </Button>
+          <Button
+            variant="primary"
+            target-id="projectsSection"
+            @button-clicked="handleClick"
+            button-text="Ver Portfolio"
+            :icon="cilArrowRight"
+          />
           <Button
             button-text="Fale comigo"
             target-id="contactSection"
