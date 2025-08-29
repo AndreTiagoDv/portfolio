@@ -7,6 +7,10 @@
   background-color: var(--color-bg);
 }
 
+#html {
+  background-color: var(--color-bg);
+}
+
 .section-container {
   display: flex;
   align-items: center;
