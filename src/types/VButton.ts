@@ -1,6 +1,8 @@
+type ButtonVariant = 'primary' | 'secondary' | 'theme';
+
 export interface VButtonProps {
-  buttonText: string;
-  isPrimary: boolean;
-  targetId: string | null;
-  [key: string]: unknown;
+  buttonText?: string;
+  targetId?: string | null;
+  variant: ButtonVariant;
+  disabled: boolean;
 }

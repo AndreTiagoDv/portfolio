@@ -2,7 +2,6 @@
   import Image from '@/assets/images/hero.jpg';
   import Text from '../ui/VText.vue';
   import Button from '../ui/VButton.vue';
-
   import { CIcon } from '@coreui/icons-vue';
   import { cilArrowRight } from '@coreui/icons';
 </script>
@@ -10,7 +9,7 @@
 <template>
   <div class="section-container">
     <div class="section-content">
-      <Text type="title">PORTIFÓLIO PROFISSIONAL</Text>
+      <Text type="title">PORTFÓLIO PROFISSIONAL</Text>
       <Text type="highlight">Criatividade que entrega resultados</Text>
       <Text type="title"
         >Sou designer e desenvolvedor focado em construir experiências digitais modernas, acessíveis
@@ -18,7 +17,7 @@
       >
       <div class="buttons-hero">
         <div class="buttons">
-          <Button :is-primary="true" target-id="projectsSection" @button-clicked="handleClick">
+          <Button variant="primary" target-id="projectsSection" @button-clicked="handleClick">
             Ver portfólio
             <CIcon :icon="cilArrowRight" class="icon-hero" />
           </Button>

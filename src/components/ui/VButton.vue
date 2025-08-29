@@ -17,7 +17,7 @@
 </script>
 
 <template>
-  <button :class="{ primary: props.isPrimary }" @click="handleClick">
+  <button :class="[props.variant]" @click="handleClick">
     <slot>{{ props.buttonText }}</slot>
   </button>
 </template>
