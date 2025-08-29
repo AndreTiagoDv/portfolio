@@ -4,7 +4,7 @@
   padding: 2rem;
   font-weight: normal;
   font-family: var(--font-family-base);
-  --color-bg: var(--color-neutral-50);
+  background-color: var(--color-bg);
 }
 
 .section-container {
@@ -64,7 +64,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--color-neutral-50);
   padding: 20px;
   box-sizing: border-box;
   text-align: right;
