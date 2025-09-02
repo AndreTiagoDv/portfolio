@@ -1,6 +1,5 @@
 <script setup>
   import VButton from './VButton.vue';
-  import { CIcon } from '@coreui/icons-vue';
   import { cibMinutemailer } from '@coreui/icons';
   import { useContactForm } from '@/composables/useContactForm';
 
@@ -22,12 +21,11 @@
       <VButton
         class="form-button"
         :disabled="loading"
-        :is-primary="true"
+        variant="primary"
         @button-clicked="sendForm"
-      >
-        Enviar
-        <CIcon :icon="cibMinutemailer" class="icon-form" />
-      </VButton>
+        button-text="Enviar"
+        :icon="cibMinutemailer"
+      />
     </div>
   </form>
 </template>
@@ -42,13 +40,14 @@
 
   .contact-form label {
     font-weight: var(--font-weigth-bold);
+    color: var(--color-text);
   }
 
   .contact-form input,
   .contact-form textarea {
     padding: 0.8rem;
     border-radius: 0.5rem;
-    border: 1px solid #d1d5db;
+    border: 1px solid;
   }
 
   .form-button {
@@ -59,7 +58,7 @@
   .icon-form {
     max-width: 1.5rem;
     align-items: center;
-    fill: var(--color-neutral-50);
+    fill: var(--color-text);
   }
 
   @media (max-width: 768px) {

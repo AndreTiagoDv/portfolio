@@ -32,7 +32,7 @@
   <div id="projectsSection" class="section-container">
     <div class="content-text">
       <VText type="highlight">Projetos</VText>
-      <VText type="title"
+      <VText type="paragraph"
         >Uma seleção de trabalhos focados em experiência, performance e visual minimalista.</VText
       >
 

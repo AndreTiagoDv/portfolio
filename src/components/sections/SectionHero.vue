@@ -2,7 +2,6 @@
   import Image from '@/assets/images/hero.jpg';
   import Text from '../ui/VText.vue';
   import Button from '../ui/VButton.vue';
-  import { CIcon } from '@coreui/icons-vue';
   import { cilArrowRight } from '@coreui/icons';
 </script>
 
@@ -11,7 +10,7 @@
     <div class="section-content">
       <Text type="title">PORTFÓLIO PROFISSIONAL</Text>
       <Text type="highlight">Criatividade que entrega resultados</Text>
-      <Text type="title"
+      <Text type="paragraph"
         >Sou designer e desenvolvedor focado em construir experiências digitais modernas, acessíveis
         e com alta performance.</Text
       >
@@ -25,6 +24,7 @@
             :icon="cilArrowRight"
           />
           <Button
+            variant="secondary"
             button-text="Fale comigo"
             target-id="contactSection"
             @button-clicked="handleClick"

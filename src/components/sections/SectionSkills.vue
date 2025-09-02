@@ -26,7 +26,7 @@
     <div class="content-text">
       <VText type="title"> Tecnologias</VText>
       <VText type="highlight">Habilidades</VText>
-      <VText type="title"
+      <VText type="paragraph"
         >Ferramentas e stacks que uso para criar produtos digitais modernos.
       </VText>
     </div>
