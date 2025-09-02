@@ -21,7 +21,7 @@
     <div class="section-content">
       <VText type="title" style="margin: 0">VAMOS CONVERSAR</VText>
       <VText type="highlight" style="margin: 0">Contato</VText>
-      <VText type="title" style="margin: 0">
+      <VText type="paragraph" style="margin: 0">
         Preencha o formulário e retornarei o mais breve possível.
       </VText>
 

@@ -28,7 +28,7 @@
 <style scoped>
   .icon-card {
     width: 1.5rem;
-    background-color: var(--color-neutral-50);
+    background-color: var(--color-bg-alt);
     fill: var(--color-primary);
     color: var(--color-primary);
     padding: 0.5rem;

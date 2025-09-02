@@ -15,13 +15,13 @@
     <div v-if="image">
       <img class="img-card" :src="image" />
       <div class="img-text">
-        <VText type="paragraph">{{ title }}</VText>
+        <VText type="title">{{ title }}</VText>
         <VText type="description">{{ description }}</VText>
       </div>
     </div>
     <div v-if="icon" class="container-icon">
       <CIcon class="icon-card" :icon="icon" />
-      <VText type="paragraph">{{ title }}</VText>
+      <VText type="title">{{ title }}</VText>
       <VText type="description">{{ description }}</VText>
     </div>
   </div>
@@ -29,7 +29,7 @@
 
 <style scoped>
   .card-container {
-    background-color: var(--color-neutral-50);
+    background-color: var(--color-bg-alt);
     border-radius: 12px;
     box-shadow: 0px 10px 30px -10px var(--color-box-shadow);
     transition: transform 0.5s ease;
@@ -49,7 +49,7 @@
 
   .icon-card {
     width: 1.3rem;
-    background-color: var(--color-neutral-50);
+    background-color: var(--color-bg-alt);
     padding: 0.66rem;
     border-radius: 0.5rem;
     color: var(--color-primary);
@@ -62,6 +62,7 @@
     align-items: center;
     padding: 1rem;
     gap: 1rem;
+    background-color: var(--color-bg);
   }
 
   .img-text {

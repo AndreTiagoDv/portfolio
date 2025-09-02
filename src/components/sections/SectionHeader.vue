@@ -4,7 +4,7 @@
 
 <template>
   <div class="container">
-    <VButtonTheme class="dark-mode" />
+    <VButtonTheme />
   </div>
 </template>
 
@@ -14,6 +14,5 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    box-shadow: var(--color-box-shadow);
   }
 </style>
