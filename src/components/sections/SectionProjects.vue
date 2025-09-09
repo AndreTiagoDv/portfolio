@@ -1,6 +1,6 @@
 <script setup>
   import VCard from '../ui/VCard.vue';
-  import VText from '../ui/VText.vue';
+  import VText from '../ui/VTextComponent/VText.vue';
 
   import ImgMobile from '@/assets/images/mobile.jpg';
   import ImgWeb from '@/assets/images/web.jpg';

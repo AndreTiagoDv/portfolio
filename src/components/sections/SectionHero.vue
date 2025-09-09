@@ -1,6 +1,6 @@
 <script setup>
   import Image from '@/assets/images/hero.jpg';
-  import Text from '../ui/VText.vue';
+  import Text from '../ui/VTextComponent/VText.vue';
   import Button from '../ui/VButton.vue';
   import { cilArrowRight } from '@coreui/icons';
 </script>
