@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import VText from './VText.vue';
+  import VText from './VTextComponent/VText.vue';
   import { CIcon } from '@coreui/icons-vue';
 
   defineProps<{
