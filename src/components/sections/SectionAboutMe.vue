@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import VText from '../ui/VTextComponent/VText.vue';
+  import VText from '@/components/ui/vtext/VText.vue';
   import AboutImage from '@/assets/images/about-me.jpg';
 </script>
 

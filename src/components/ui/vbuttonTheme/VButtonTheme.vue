@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import VButton from './VButton.vue';
+  import VButton from '@/components/ui/vbutton/VButton.vue';
   import type { VButtonProps } from '@/types/VButton';
   import { useTheme } from '@/composables/useTheme';
   import { computed } from 'vue';

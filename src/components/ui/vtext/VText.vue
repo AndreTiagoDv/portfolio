@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { computed } from 'vue';
   import type { VTextProps, TextType } from '@/types/VText';
-  import '@/components/ui/VTextComponent/VTextStyle.scss';
+  import './VTextStyle.scss';
 
   const props = defineProps<VTextProps>();
   const tagmap: Record<TextType, string> = {

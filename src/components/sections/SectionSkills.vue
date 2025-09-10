@@ -1,6 +1,6 @@
 <script setup>
-  import VText from '../ui/VTextComponent/VText.vue';
-  import VCard from '../ui/VCard.vue';
+  import VText from '@/components/ui/vtext/VText.vue';
+  import VCard from '@/components/ui/vcard/VCard.vue';
 
   import {
     cibTypescript,
@@ -55,15 +55,5 @@
 
   .content-card:hover {
     transform: scale(1.05);
-  }
-
-  @media (max-width: 768px) {
-    .container-card {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 1rem;
-      list-style: none;
-      padding: 1rem;
-    }
   }
 </style>

@@ -1,6 +1,6 @@
 <script setup>
-  import VCard from '../ui/VCard.vue';
-  import VText from '../ui/VTextComponent/VText.vue';
+  import VCard from '@/components/ui/vcard/VCard.vue';
+  import VText from '@/components/ui/vtext/VText.vue';
 
   import ImgMobile from '@/assets/images/mobile.jpg';
   import ImgWeb from '@/assets/images/web.jpg';
@@ -64,13 +64,5 @@
 
   .content-card:hover {
     transform: scale(1.05);
-  }
-
-  @media (max-width: 768px) {
-    .horizontal-list {
-      flex-direction: column;
-      padding: 1rem;
-      max-width: 20rem;
-    }
   }
 </style>

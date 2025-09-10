@@ -1,5 +1,5 @@
 <script setup>
-  import VText from '../ui/VTextComponent/VText.vue';
+  import VText from '@/components/ui/vtext/VText.vue';
 </script>
 
 <template>

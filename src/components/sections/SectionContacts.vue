@@ -1,7 +1,7 @@
 <script setup>
-  import VText from '../ui/VTextComponent/VText.vue';
-  import VForm from '../ui/VForm.vue';
-  import VButtonIcon from '../ui/VButtonIcon.vue';
+  import VText from '@/components/ui/vtext/VText.vue';
+  import VForm from '@/components/ui/vform/VForm.vue';
+  import VButtonIcon from '@/components/ui/vbuttonIcon/VButtonIcon.vue';
 
   import { cibGithub, cibLinkedin } from '@coreui/icons';
 
@@ -81,16 +81,5 @@
     flex-direction: column;
     padding: 1rem;
     margin-top: 0px;
-  }
-
-  @media (max-width: 768px) {
-    .contact-grid {
-      width: 100%;
-      display: block;
-    }
-
-    .section-content {
-      padding: 0px;
-    }
   }
 </style>
