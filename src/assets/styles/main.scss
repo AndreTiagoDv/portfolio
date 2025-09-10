@@ -72,7 +72,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: $breakpoint-md) {
   .section-container {
     display: flex;
     align-items: center;
