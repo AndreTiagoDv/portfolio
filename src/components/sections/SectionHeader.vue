@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import VButtonTheme from '../ui/VButtonTheme.vue';
+  import VButtonTheme from '../ui/vbuttonTheme/VButtonTheme.vue';
 </script>
 
 <template>

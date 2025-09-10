@@ -1,5 +1,6 @@
 <script setup>
-  import VButton from './VButton.vue';
+  import './vformStyle.scss';
+  import VButton from '@/components/ui/vbutton/VButton.vue';
   import { cibMinutemailer } from '@coreui/icons';
   import { useContactForm } from '@/composables/useContactForm';
 
@@ -30,45 +31,4 @@
   </form>
 </template>
 
-<style scoped>
-  .contact-form {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .contact-form label {
-    font-weight: var(--font-weigth-bold);
-    color: var(--color-text);
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    padding: 0.8rem;
-    border-radius: 0.5rem;
-    border: 1px solid;
-  }
-
-  .form-button {
-    width: 40%;
-    align-self: flex-start;
-  }
-
-  .icon-form {
-    max-width: 1.5rem;
-    align-items: center;
-    fill: var(--color-text);
-  }
-
-  @media (max-width: 768px) {
-    .form-button {
-      width: 40%;
-      align-self: flex-start;
-    }
-
-    .icon-form {
-      display: none;
-    }
-  }
-</style>
+<style scoped></style>
