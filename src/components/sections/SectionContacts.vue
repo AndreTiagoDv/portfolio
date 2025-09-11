@@ -1,9 +1,10 @@
 <script setup>
   import VText from '@/components/ui/vtext/VText.vue';
   import VForm from '@/components/ui/vform/VForm.vue';
-  import VButtonIcon from '@/components/ui/vbuttonIcon/VButtonIcon.vue';
+  import SocialMedia from '@/components/ui/vsocialmedia/VSocialMedia.vue';
 
   import { cibGithub, cibLinkedin } from '@coreui/icons';
+  import VSocialMedia from '@/components/ui/vsocialmedia/VSocialMedia.vue';
 
   const items = [
     { id: 1, information: 'Github', icon: cibGithub, url: 'https://github.com/AndreTiagoDv' },
@@ -33,7 +34,7 @@
           <VText type="title">Redes Sociais</VText>
           <ul class="content-card" style="margin: 0px; padding: 0px">
             <li v-for="item in items" :key="item.id" class="content-button">
-              <VButtonIcon
+              <VSocialMedia
                 :key="item.id"
                 class="button"
                 :tooltip="item.information"

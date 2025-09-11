@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { CIcon } from '@coreui/icons-vue';
-  import type { VButtonProps } from '@/types/VButton';
+  import type { VButtonProps } from '@/components/ui/vbutton/VButton.type';
   import './VbuttonStyle.scss';
 
   const props = defineProps<VButtonProps>();
