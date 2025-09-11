@@ -39,14 +39,13 @@
   </ul>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
   .container-card {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.2rem;
     list-style: none;
     padding: 1rem;
-    transition: transform 0.5s ease;
   }
 
   .content-card {
@@ -55,5 +54,15 @@
 
   .content-card:hover {
     transform: scale(1.05);
+  }
+
+  @media (min-width: $breakpoint-md) {
+    .container-card {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+      list-style: none;
+      padding: 1rem;
+    }
   }
 </style>

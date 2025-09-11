@@ -48,10 +48,8 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
   .contact-grid {
-    display: flex;
-    gap: 4rem;
     width: 100%;
   }
 
@@ -70,6 +68,7 @@
     display: flex;
     justify-content: flex-start;
     height: 20%;
+    margin: 1rem 0;
   }
 
   .content-card {
@@ -81,5 +80,18 @@
     flex-direction: column;
     padding: 1rem;
     margin-top: 0px;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    .contact-grid {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .container-card {
+      height: auto;
+      margin-top: 0;
+    }
   }
 </style>

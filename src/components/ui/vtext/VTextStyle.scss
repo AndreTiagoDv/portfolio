@@ -1,5 +1,5 @@
 .title {
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-regular);
   color: var(--color-text);
 }
@@ -11,8 +11,8 @@
 }
 
 .paragraph {
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-small);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
   color: var(--color-text-muted);
 }
 

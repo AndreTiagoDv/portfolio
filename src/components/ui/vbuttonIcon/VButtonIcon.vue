@@ -2,7 +2,7 @@
   import { defineProps, defineEmits } from 'vue';
   import { CIcon } from '@coreui/icons-vue';
   import type { VButtonIconProps } from '@/types/VButtonIcon';
-  import './vbuttonStyle.scss';
+  import './vbuttoniconStyle.scss';
 
   const props = defineProps<VButtonIconProps>();
 

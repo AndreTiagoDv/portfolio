@@ -12,7 +12,5 @@
   .container {
     background-color: var(--color-bg);
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
   }
 </style>

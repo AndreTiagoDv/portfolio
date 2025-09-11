@@ -45,24 +45,33 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
   .horizontal-list {
     display: flex;
+    flex-direction: column;
     list-style: none;
-    gap: 1rem;
+    margin: auto;
+    padding: 0;
   }
 
   .content-card {
     margin: 0px;
     padding: 16px;
     justify-content: flex-start;
-  }
-
-  .content-card {
     transition: transform 0.3s ease;
+    max-width: 15rem;
   }
 
   .content-card:hover {
     transform: scale(1.05);
+  }
+
+  @media (min-width: $breakpoint-md) {
+    .horizontal-list {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      justify-content: center;
+    }
   }
 </style>
