@@ -2,7 +2,7 @@
   import { defineProps, defineEmits } from 'vue';
   import { CIcon } from '@coreui/icons-vue';
   import type { VSocialMediaProps } from './VSocialMedia.type';
-  import './vSocialmediaStyle.scss';
+  import './vSocialMediaStyle.scss';
 
   const props = defineProps<VSocialMediaProps>();
 
