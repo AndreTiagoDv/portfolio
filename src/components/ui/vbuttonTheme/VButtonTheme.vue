@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import VButton from '@/components/ui/vbutton/VButton.vue';
-  import type { VButtonProps } from '@/types/VButton';
+  import type { VButtonProps } from '@/components/ui/vbutton/VButton.type';
   import { useTheme } from '@/composables/useTheme';
   import { computed } from 'vue';
   import { cilMoon, cilSun } from '@coreui/icons';

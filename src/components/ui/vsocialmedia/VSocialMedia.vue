@@ -1,10 +1,10 @@
 <script setup lang="ts">
   import { defineProps, defineEmits } from 'vue';
   import { CIcon } from '@coreui/icons-vue';
-  import type { VButtonIconProps } from '@/types/VButtonIcon';
-  import './vbuttoniconStyle.scss';
+  import type { VSocialMediaProps } from './VSocialMedia.type';
+  import './vSocialMediaStyle.scss';
 
-  const props = defineProps<VButtonIconProps>();
+  const props = defineProps<VSocialMediaProps>();
 
   const emit = defineEmits<{
     (e: 'button-clicked'): void;

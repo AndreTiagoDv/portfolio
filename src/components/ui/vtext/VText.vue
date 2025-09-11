@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { computed } from 'vue';
-  import type { VTextProps, TextType } from '@/types/VText';
+  import type { VTextProps, TextType } from '@/components/ui/vtext/VText.type';
   import './VTextStyle.scss';
 
   const props = defineProps<VTextProps>();
