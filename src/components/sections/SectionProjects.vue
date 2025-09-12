@@ -29,7 +29,7 @@
 </script>
 
 <template>
-  <div id="projectsSection" class="section-container">
+  <div id="SectionProjects" class="section-container">
     <div class="content-text">
       <VText type="highlight">Projetos</VText>
       <VText type="paragraph"

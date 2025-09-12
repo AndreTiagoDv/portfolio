@@ -22,7 +22,7 @@
 </script>
 
 <template>
-  <div class="section-container">
+  <div class="section-container" id="SectionSkills">
     <div class="content-text">
       <VText type="title"> Tecnologias</VText>
       <VText type="highlight">Habilidades</VText>

@@ -1,8 +1,6 @@
 <script setup>
   import VText from '@/components/ui/vtext/VText.vue';
   import VForm from '@/components/ui/vform/VForm.vue';
-  import SocialMedia from '@/components/ui/vsocialmedia/VSocialMedia.vue';
-
   import { cibGithub, cibLinkedin } from '@coreui/icons';
   import VSocialMedia from '@/components/ui/vsocialmedia/VSocialMedia.vue';
 
@@ -18,7 +16,7 @@
 </script>
 
 <template>
-  <div id="contactSection" class="section-container">
+  <div id="SectionContacts" class="section-container">
     <div class="section-content">
       <VText type="title" style="margin: 0">VAMOS CONVERSAR</VText>
       <VText type="highlight" style="margin: 0">Contato</VText>

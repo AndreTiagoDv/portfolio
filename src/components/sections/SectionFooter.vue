@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="container-footer">
+  <div class="container-footer" id="SectionFooter">
     <VText type="description"> &copy; 2025 Andre Tiago — Todos os direitos reservados </VText>
   </div>
 </template>
