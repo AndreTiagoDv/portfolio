@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <div class="section-container">
+  <div class="section-container" id="SectionAboutMe">
     <div class="section-img-container">
       <img class="section-img-content" :src="AboutImage" alt="about-me" />
     </div>

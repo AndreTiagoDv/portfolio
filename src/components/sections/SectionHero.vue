@@ -18,7 +18,7 @@
         <div class="buttons">
           <Button
             variant="primary"
-            target-id="projectsSection"
+            target-id="SectionProjects"
             @button-clicked="handleClick"
             button-text="Ver Portfolio"
             :icon="cilArrowRight"
@@ -26,7 +26,7 @@
           <Button
             variant="secondary"
             button-text="Fale comigo"
-            target-id="contactSection"
+            target-id="SectionContacts"
             @button-clicked="handleClick"
           />
         </div>
