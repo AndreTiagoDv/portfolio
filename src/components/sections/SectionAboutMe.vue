@@ -1,12 +1,16 @@
 <script setup lang="ts">
   import VText from '@/components/ui/vtext/VText.vue';
-  import AboutImage from '@/assets/images/about-me.jpg';
+  import VImage from '../ui/vimage/VImage.vue';
 </script>
 
 <template>
   <div class="section-container" id="SectionAboutMe">
     <div class="section-img-container">
-      <img class="section-img-content" :src="AboutImage" alt="about-me" />
+      <VImage
+        name="about-me"
+        alt="Imagem de um computador e cafe"
+        class-name="section-img-content"
+      />
     </div>
     <div class="section-content">
       <VText type="highlight">Sobre mim</VText>
