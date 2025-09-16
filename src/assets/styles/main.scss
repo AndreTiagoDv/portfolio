@@ -66,18 +66,6 @@
     text-align: right;
   }
 
-  .section-img-content {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    transition: transform 0.5s ease;
-    box-shadow: 0px 10px 30px -10px var(--color-box-shadow);
-  }
-
-  .section-img-content:hover {
-    transform: scale(1.025);
-  }
 }
 
 @media (min-width: $breakpoint-lg) {
@@ -131,15 +119,4 @@
     text-align: right;
   }
 
-  .section-img-content {
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    transition: transform 0.5s ease;
-    box-shadow: 0px 10px 30px -10px var(--color-box-shadow);
-  }
-
-  .section-img-content:hover {
-    transform: scale(1.025);
-  }
 }

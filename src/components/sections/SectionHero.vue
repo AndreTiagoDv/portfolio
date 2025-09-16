@@ -1,5 +1,5 @@
 <script setup>
-  import Image from '@/assets/images/hero.jpg';
+  import VImage from '../ui/vimage/VImage.vue';
   import VText from '@/components/ui/vtext/VText.vue';
   import Button from '@/components/ui/vbutton/VButton.vue';
   import { cilArrowRight } from '@coreui/icons';
@@ -8,6 +8,7 @@
 <template>
   <div class="section-container">
     <div class="section-content">
+      <VSkeleton v-if="loading" variant="text" width="70%" />
       <VText type="title">PORTFÓLIO PROFISSIONAL</VText>
       <VText type="highlight">Criatividade que entrega resultados</VText>
       <VText type="paragraph"
@@ -33,7 +34,7 @@
       </div>
     </div>
     <div class="section-img-container">
-      <img class="section-img-content" :src="Image" alt="Descrição da imagem" />
+      <VImage name="hero" alt="imagem de destaque do portfólio" />
     </div>
   </div>
 </template>
