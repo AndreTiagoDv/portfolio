@@ -6,8 +6,9 @@
 }
 
 .contact-form label {
-  font-weight: var(--font-weigth-bold);
+  font-weight: var(--font-weigth-regular);
   color: var(--color-text);
+  font-size: var(--font-size-sm);
 }
 
 .contact-form input,
@@ -15,6 +16,11 @@
   padding: 0.8rem;
   border-radius: 0.5rem;
   border: 1px solid;
+}
+input::placeholder,
+textarea::placeholder {
+  font-size: var(--font-size-xs); 
+  color:var(--color-text); 
 }
 
 .form-button {

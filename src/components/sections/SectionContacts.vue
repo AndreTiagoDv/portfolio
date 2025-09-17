@@ -16,9 +16,9 @@
 </script>
 
 <template>
-  <div id="SectionContacts" class="section-container">
+  <section id="SectionContacts" class="section-container" aria-labelledby="contact-title">
     <div class="section-content">
-      <VText type="title" style="margin: 0">VAMOS CONVERSAR</VText>
+      <VText id="contact-title" type="title" style="margin: 0">VAMOS CONVERSAR</VText>
       <VText type="highlight" style="margin: 0">Contato</VText>
       <VText type="paragraph" style="margin: 0">
         Preencha o formulário e retornarei o mais breve possível.
@@ -26,11 +26,11 @@
 
       <div class="contact-grid">
         <div class="form-container">
-          <VForm />
+          <VForm aria-label="Formulario de contato" />
         </div>
-        <div class="container-card">
-          <VText type="title">Redes Sociais</VText>
-          <ul class="content-card" style="margin: 0px; padding: 0px">
+        <div class="container-card" aria-labelledby="social-title">
+          <VText id="social-title" type="title">Redes Sociais</VText>
+          <ul class="content-card" style="margin: 0px; padding: 0px" role="list">
             <li v-for="item in items" :key="item.id" class="content-button">
               <VSocialMedia
                 :key="item.id"
@@ -38,13 +38,14 @@
                 :tooltip="item.information"
                 :icon="item.icon"
                 :url="item.url"
+                :aria-label="`Acesse meu ${item.information}`"
               />
             </li>
           </ul>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
@@ -68,6 +69,7 @@
     justify-content: flex-start;
     height: 20%;
     margin: 1rem 0;
+    gap: 1.5rem;
   }
 
   .content-card {

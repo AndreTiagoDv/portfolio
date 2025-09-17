@@ -12,10 +12,12 @@
 </script>
 
 <template>
-  <div class="container">
-    <VMenu :items="navigatorMenu" />
-    <VButtonTheme />
-  </div>
+  <header class="container">
+    <nav aria-label="Menu principal">
+      <VMenu :items="navigatorMenu" />
+    </nav>
+    <VButtonTheme aria-label="Alternar entre tema claro e escuro" />
+  </header>
 </template>
 
 <style scoped>
