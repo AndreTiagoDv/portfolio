@@ -12,34 +12,38 @@
   } from '@coreui/icons';
 
   const items = [
-    { id: 1, name: 'TypeScript', iconName: cibTypescript },
-    { id: 2, name: 'HTML & CSS', iconName: cibHtml5 },
-    { id: 3, name: 'React', iconName: cibReact },
-    { id: 4, name: 'JavaScript', iconName: cibJavascript },
-    { id: 5, name: 'UI/UX', iconName: cilPaintBucket },
-    { id: 6, name: 'VueJs', iconName: cibVueJs },
+    { id: 1, name: 'TypeScript', iconName: cibTypescript, alt: 'TypeScript' },
+    { id: 2, name: 'HTML & CSS', iconName: cibHtml5, alt: 'HTML e CSS' },
+    { id: 3, name: 'React', iconName: cibReact, alt: 'React' },
+    { id: 4, name: 'JavaScript', iconName: cibJavascript, alt: 'JavaScript' },
+    { id: 5, name: 'UI/UX', iconName: cilPaintBucket, alt: 'UI e UX' },
+    { id: 6, name: 'VueJs', iconName: cibVueJs, alt: 'VueJs' },
   ];
 </script>
 
 <template>
-  <div class="section-container" id="SectionSkills">
+  <section class="section-container" id="SectionSkills" aria-labelledby="skill-title">
     <div class="content-text">
-      <VText type="title"> Tecnologias</VText>
+      <VText id="skill-title" type="title"> Tecnologias</VText>
       <VText type="highlight">Habilidades</VText>
       <VText type="paragraph"
         >Ferramentas e stacks que uso para criar produtos digitais modernos.
       </VText>
     </div>
-  </div>
-
-  <ul class="container-card">
-    <li v-for="item in items" :key="item.id" class="content-card">
-      <VCard :title="item.name" :icon="item.iconName" />
-    </li>
-  </ul>
+    <ul class="container-card">
+      <li v-for="item in items" :key="item.id" class="content-card">
+        <article>
+          <VCard :title="item.name" :icon="item.iconName" :alt="item.alt" />
+        </article>
+      </li>
+    </ul>
+  </section>
 </template>
 
 <style lang="scss" scoped>
+  .section-container {
+    display: table-row;
+  }
   .container-card {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -59,7 +63,7 @@
   @media (min-width: $breakpoint-md) {
     .container-card {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 1.2rem;
       list-style: none;
       padding: 1rem;

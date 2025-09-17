@@ -32,3 +32,25 @@
     font-size: var(--font-size-xlg);
   }
 }
+@media (min-width: $breakpoint-lg) {
+  .paragraph {
+    font-size: var(--font-size-lg);
+  }
+  .description {
+    font-size: var(--font-size-md);
+  }
+}
+@media (min-width: $breakpoint-xl) {
+  .title {
+    font-size: var(--font-size-xlg);
+  }
+  .highlight {
+    font-size: var(--font-size-xxlg);
+  }
+  .paragraph {
+    font-size: var(--font-size-xlg);
+  }
+  .description {
+    font-size: var(--font-size-lg);
+  }
+}

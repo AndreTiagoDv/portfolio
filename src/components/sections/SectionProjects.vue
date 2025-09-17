@@ -11,38 +11,48 @@
       id: 1,
       name: 'Website responsivo',
       img: ImgWeb,
-      description: 'UI limpa • Acessível • Responsiva',
+      description: '• Sites modernos que se adaptam a desktops, tablets e celulares.',
+      alt: 'Captura de tela de um website exibido em diferentes tamanhos de tela',
     },
     {
       id: 2,
       name: 'Aplicativo mobile UI',
       img: ImgMobile,
-      description: 'UI limpa • Acessível • Responsiva',
+      description: '• Aplicativos com design intuitivo e foco em experiência do usuário.',
+      alt: 'Interface de um aplicativo mobile com botões grandes e navegação clara',
     },
     {
       id: 3,
       name: 'Dashboard e Analytics',
       img: ImgDashboard,
-      description: 'UI limpa • Acessível • Responsiva',
+      description: '• Painel com gráficos interativos para análise de dados em tempo real.',
+      alt: 'Dashboard exibindo gráficos de barras e linhas com dados analíticos',
     },
   ];
 </script>
 
 <template>
-  <div id="SectionProjects" class="section-container">
+  <section id="SectionProjects" class="section-container" aria-labelledby="projects-title">
     <div class="content-text">
-      <VText type="highlight">Projetos</VText>
+      <VText id="projects-title" type="highlight">Projetos</VText>
       <VText type="paragraph"
         >Uma seleção de trabalhos focados em experiência, performance e visual minimalista.</VText
       >
 
       <ul class="horizontal-list">
         <li v-for="item in items" :key="item.id" class="content-card">
-          <VCard :title="item.name" :description="item.description" :image="item.img" />
+          <article>
+            <VCard
+              :title="item.name"
+              :description="item.description"
+              :image="item.img"
+              :alt="item.alt"
+            />
+          </article>
         </li>
       </ul>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

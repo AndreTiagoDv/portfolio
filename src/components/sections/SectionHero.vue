@@ -6,10 +6,10 @@
 </script>
 
 <template>
-  <div class="section-container">
+  <section class="section-container" aria-labelledby="hero-title">
     <div class="section-content">
       <VSkeleton v-if="loading" variant="text" width="70%" />
-      <VText type="title">PORTFÓLIO PROFISSIONAL</VText>
+      <VText id="hero-title" type="title">PORTFÓLIO PROFISSIONAL</VText>
       <VText type="highlight">Criatividade que entrega resultados</VText>
       <VText type="paragraph"
         >Sou designer e desenvolvedor focado em construir experiências digitais modernas, acessíveis
@@ -23,12 +23,14 @@
             @button-clicked="handleClick"
             button-text="Ver Portfolio"
             :icon="cilArrowRight"
+            aria-label="Ir para a seção projetos"
           />
           <Button
             variant="secondary"
             button-text="Fale comigo"
             target-id="SectionContacts"
             @button-clicked="handleClick"
+            aria-label="Ir para seção contatos"
           />
         </div>
       </div>
@@ -36,7 +38,7 @@
     <div class="section-img-container">
       <VImage name="hero" alt="imagem de destaque do portfólio" />
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
