@@ -42,15 +42,15 @@
 }
 @media (min-width: $breakpoint-xl) {
   .title {
-    font-size: var(--font-size-xlg);
+    font-size: var(--font-size-lg);
   }
   .highlight {
-    font-size: var(--font-size-xxlg);
-  }
-  .paragraph {
     font-size: var(--font-size-xlg);
   }
-  .description {
+  .paragraph {
     font-size: var(--font-size-lg);
+  }
+  .description {
+    font-size: var(--font-size-md);
   }
 }

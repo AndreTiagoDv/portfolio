@@ -19,8 +19,8 @@
 }
 input::placeholder,
 textarea::placeholder {
-  font-size: var(--font-size-xs); 
-  color:var(--color-text); 
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
 }
 
 .form-button {
