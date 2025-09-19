@@ -3,7 +3,7 @@
   import SectionHero from '@/components/sections/SectionHero.vue';
   import SectionAboutMe from '@/components/sections/SectionAboutMe.vue';
   const SectionProjects = defineAsyncComponent(
-    () => import('@/components/sections/SectionProjects.vue'),
+    () => import('@/components/sections/SectionProjects.vue' /* webpackPrefetch: true */),
   );
   const SectionSkills = defineAsyncComponent(
     () => import('@/components/sections/SectionSkills.vue'),
