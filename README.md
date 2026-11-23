@@ -1,33 +1,37 @@
-# vue-project
+# Andre Tiago — Portfólio
 
-This template should help get you started developing with Vue 3 in Vite.
+Portfólio pessoal em pt-BR com experiência profissional, três projetos, formação, cursos, currículo em PDF e contato por e-mail.
 
-## Recommended IDE Setup
+## Desenvolvimento
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+Requisitos: Node.js 22.12 ou superior e npm.
 
 ```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
+npm ci
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+## Verificação
 
 ```sh
 npm run build
+npm run lint
+npm run preview
 ```
+
+A build executa a checagem TypeScript e gera o site estático em `dist`.
+
+## Publicação
+
+O projeto Vercel `portfolio` está conectado a `AndreTiagoDv/portfolio`, com produção na branch `main`. Configuração: framework Vite, comando `npm run build`, saída `dist`.
+
+O site não usa backend, banco, formulário ou variáveis de ambiente. Não adicione credenciais ao repositório.
+
+## Conteúdo
+
+- Conteúdo e links: `src/App.vue`.
+- Estilos responsivos: `src/portfolio.css`.
+- Currículo: `public/andre-tiago-curriculo.pdf`.
+- Metadados: `index.html`.
+
+Os projetos profissionais são descritos em nível conceitual; o código deste repositório é apenas o portfólio. As ilustrações não são capturas de sistemas internos. Os cursos foram conferidos no LinkedIn em novembro de 2026; o item AWS é material preparatório, não certificação profissional.
