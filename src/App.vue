@@ -157,7 +157,7 @@
           <h2 id="projects-title">Problemas reais.<br /><span>Soluções construídas.</span></h2>
         </div>
         <p class="section-description">
-          Uma seleção dos projetos profissionais em que participo na ICELTEC. O foco está no
+          Uma seleção dos projetos em que participo pela Olympio, alocado na ICELTEC. O foco está no
           problema, nas tecnologias e na minha contribuição.
         </p>
       </div>
@@ -243,9 +243,9 @@
             solução.
           </p>
           <p>
-            Atuo há um ano como desenvolvedor PJ na ICELTEC, participando de sistemas de compras,
-            estoque e logística. Nesse caminho, tenho trabalhado com desenvolvimento web, APIs,
-            bancos de dados e automação.
+            Atuo há um ano como desenvolvedor PJ pela Olympio, alocado na ICELTEC, participando de
+            sistemas de compras, estoque e logística. Nesse caminho, tenho trabalhado com
+            desenvolvimento web, APIs, bancos de dados e automação.
           </p>
           <p>
             Estudo Análise e Desenvolvimento de Sistemas na Estácio e quero dar o próximo passo em
