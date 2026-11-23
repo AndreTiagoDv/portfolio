@@ -1,5 +1,7 @@
 # Andre Tiago — Portfólio
 
+[Acesse o portfólio publicado](https://andre-tiago-dev.vercel.app)
+
 Portfólio pessoal em pt-BR com experiência profissional, três projetos, formação, cursos, currículo em PDF e contato por e-mail.
 
 ## Desenvolvimento
